@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EVC2>
+
+	<!-- Application metadata -->
+	<Application>
+		<SoftwareVersion>0</SoftwareVersion>
+		<FileVersion>0</FileVersion>
+	</Application>
+	
+	<!-- Manufacturer IDs -->
+	<Manufacturers>
+	
+		<Manufacturer>
+			<Name>Cypress/Spansion</Name>
+			<Id>01</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>EON</Name>
+			<Id>1C</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Adesto</Name>
+			<Id>1F</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Micron</Name>
+			<Id>20</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>AMIC</Name>
+			<Id>37</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Gigadevice</Name>
+			<Id>51</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Sanyo</Name>
+			<Id>62</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Boyamicro</Name>
+			<Id>68</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>PMC</Name>
+			<Id>7F</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Puya</Name>
+			<Id>85</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>ESMT</Name>
+			<Id>8C</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>ISSI</Name>
+			<Id>9D</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Fudan MG</Name>
+			<Id>A1</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Microchip/SST/PCT</Name>
+			<Id>BF</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>MXIC</Name>
+			<Id>C2</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Gigadevice</Name>
+			<Id>C8</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Berg Micro</Name>
+			<Id>E0</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Winbond</Name>
+			<Id>EF</Id>
+		</Manufacturer>
+
+		<Manufacturer>
+			<Name>Fidelix</Name>
+			<Id>F8</Id>
+		</Manufacturer>
+		
+	</Manufacturers>
+	
+	<!-- Device specification -->
+	<Devices>
+		<!-- Winbond parts -->
+		<Device> <!-- Generic 40h -->
+			<ManufacturerId>EF</ManufacturerId> <!-- Hex id -->
+			<PartId>40</PartId> <!-- Hex id -->
+			<PartNumber>Generic W25QxV</PartNumber>
+			<MaxSpeed>104</MaxSpeed> <!-- MHz -->
+			<Voltage>
+				<Min>2500</Min> <!-- mV -->
+				<Nom>3000</Nom> <!-- mV -->
+				<Max>3600</Max> <!-- mV -->
+			</Voltage>
+		</Device>
+		<Device> <!-- Generic 60h -->
+			<ManufacturerId>EF</ManufacturerId> <!-- Hex id -->
+			<PartId>60</PartId> <!-- Hex id -->
+			<PartNumber>Generic W25QxW</PartNumber>
+			<MaxSpeed>133</MaxSpeed>
+			<Voltage>
+				<Min>1700</Min>
+				<Nom>1800</Nom>
+				<Max>1950</Max>
+			</Voltage>
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId> <!-- Hex id -->
+			<PartId>40</PartId> <!-- Hex id -->
+			<SizeId>14</SizeId> <!-- Hex id, in bytes = 2^value -->
+			<PartNumber>W25Q80BV</PartNumber>
+			<MaxSpeed>104</MaxSpeed> <!-- MHz -->
+			<Voltage>
+				<Min>2500</Min> <!-- mV -->
+				<Nom>3000</Nom> <!-- mV -->
+				<Max>3600</Max> <!-- mV -->
+			</Voltage>
+			<SectorEraseTime>30</SectorEraseTime> <!-- ms -->
+			<ChipEraseTime>2000</ChipEraseTime> <!-- ms -->
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>15</SizeId>
+			<PartNumber>W25Q16JL</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2300</Min>
+				<Nom>2500</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>45</SectorEraseTime>
+			<ChipEraseTime>5000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>16</SizeId>
+			<PartNumber>W25Q32FV/JV</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>100</SectorEraseTime>
+			<ChipEraseTime>10000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>17</SizeId>
+			<PartNumber>W25Q64FV/JV</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>60</SectorEraseTime>
+			<ChipEraseTime>20000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>18</SizeId>
+			<PartNumber>W25Q128FV</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>100</SectorEraseTime>
+			<ChipEraseTime>40000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>19</SizeId>
+			<PartNumber>W25Q25xFV/JV</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+		</Device>
+		<Device>
+			<ManufacturerId>EF</ManufacturerId>
+			<PartId>60</PartId>
+			<SizeId>19</SizeId>
+			<PartNumber>W25Q256JW</PartNumber>
+			<MaxSpeed>133</MaxSpeed>
+			<Voltage>
+				<Min>1700</Min>
+				<Nom>1800</Nom>
+				<Max>1950</Max>
+			</Voltage>
+			<SectorEraseTime>50</SectorEraseTime>
+			<ChipEraseTime>90000</ChipEraseTime>
+		</Device>
+		
+		<!-- Micron parts -->
+		<Device> <!-- Generic BBh -->
+			<ManufacturerId>20</ManufacturerId>
+			<PartId>BB</PartId>
+			<PartNumber>Generic N25QxA</PartNumber>
+			<MaxSpeed>108</MaxSpeed>
+			<Voltage>
+				<Min>1700</Min>
+				<Nom>1800</Nom>
+				<Max>2000</Max>
+			</Voltage>
+		</Device>
+		<Device>
+			<ManufacturerId>20</ManufacturerId>
+			<PartId>BB</PartId>
+			<SizeId>18</SizeId>
+			<PartNumber>N25Q128A</PartNumber>
+			<MaxSpeed>108</MaxSpeed>
+			<Voltage>
+				<Min>1700</Min>
+				<Nom>1800</Nom>
+				<Max>2000</Max>
+			</Voltage>
+		</Device>
+		
+		<!-- Gigadevice parts -->
+		<Device> <!-- Generic 40h -->
+			<ManufacturerId>C8</ManufacturerId>
+			<PartId>40</PartId>
+			<PartNumber>Generic GD25xC</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+		</Device>
+		<Device> <!-- Generic 60h -->
+			<ManufacturerId>C8</ManufacturerId>
+			<PartId>60</PartId>
+			<PartNumber>GD25Lx</PartNumber>
+			<MaxSpeed>80</MaxSpeed>
+			<Voltage>
+				<Min>1650</Min>
+				<Nom>1800</Nom>
+				<Max>2000</Max>
+			</Voltage>
+		</Device>
+		<Device>
+			<ManufacturerId>C8</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>17</SizeId>
+			<PartNumber>GD25x64C</PartNumber>
+			<MaxSpeed>104</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>50</SectorEraseTime>
+			<ChipEraseTime>25000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>C8</ManufacturerId>
+			<PartId>40</PartId>
+			<SizeId>18</SizeId>
+			<PartNumber>GD25xx12xx</PartNumber>
+			<MaxSpeed>80</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>50</SectorEraseTime>
+			<ChipEraseTime>50000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>C8</ManufacturerId>
+			<PartId>60</PartId>
+			<SizeId>18</SizeId>
+			<PartNumber>GD25Lx128x</PartNumber>
+			<MaxSpeed>80</MaxSpeed>
+			<Voltage>
+				<Min>1650</Min>
+				<Nom>1800</Nom>
+				<Max>2000</Max>
+			</Voltage>
+			<SectorEraseTime>90</SectorEraseTime>
+			<ChipEraseTime>50000</ChipEraseTime>
+		</Device>
+		
+		<!-- MXIC parts -->
+		<Device> <!-- Generic 20h -->
+			<ManufacturerId>C2</ManufacturerId>
+			<PartId>20</PartId>
+			<PartNumber>MX25Lx</PartNumber>
+			<MaxSpeed>133</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+		</Device>
+		<Device> <!-- Generic 25h -->
+			<ManufacturerId>C2</ManufacturerId>
+			<PartId>25</PartId>
+			<PartNumber>MX25Ux</PartNumber>
+			<MaxSpeed>133</MaxSpeed>
+			<Voltage>
+				<Min>1650</Min>
+				<Nom>1800</Nom>
+				<Max>2000</Max>
+			</Voltage>
+		</Device>
+		<Device>
+			<ManufacturerId>C2</ManufacturerId>
+			<PartId>20</PartId>
+			<SizeId>18</SizeId>
+			<PartNumber>MX25L128xxx</PartNumber>
+			<MaxSpeed>133</MaxSpeed>
+			<Voltage>
+				<Min>2700</Min>
+				<Nom>3000</Nom>
+				<Max>3600</Max>
+			</Voltage>
+			<SectorEraseTime>30</SectorEraseTime>
+			<ChipEraseTime>50000</ChipEraseTime>
+		</Device>
+		<Device>
+			<ManufacturerId>C2</ManufacturerId>
+			<PartId>25</PartId>
+			<SizeId>39</SizeId>
+			<PartNumber>MX25U25645G</PartNumber>
+			<MaxSpeed>133</MaxSpeed>
+			<Voltage>
+				<Min>1650</Min>
+				<Nom>1800</Nom>
+				<Max>2000</Max>
+			</Voltage>
+			<SectorEraseTime>25</SectorEraseTime>
+			<ChipEraseTime>75000</ChipEraseTime>
+		</Device>
+	</Devices>
+</EVC2>
