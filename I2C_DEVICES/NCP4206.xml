@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EVC2>
+	<!-- Application metadata -->
+	<Application>
+		<SoftwareVersion>10</SoftwareVersion>
+		<FileVersion>1</FileVersion>	
+	</Application>
+	<Device>
+		<Name>NCP4206</Name>
+		<Class>1</Class>
+		<BusType>1</BusType>
+		<BusSpeed>100</BusSpeed>
+		<Address Type="List">
+			<Value>20</Value>
+		</Address>
+		<Detect Type="RegisterMatch">
+			<Register>
+				<Offset>99</Offset>
+				<Length>1</Length>
+				<Data>41</Data> <!-- MFR_ID -->
+			</Register>
+			<Register>
+				<Offset>9A</Offset>
+				<Length>2</Length>
+				<Data>3298</Data> <!-- MFR_MODEL -->
+			</Register>
+		</Detect>
+		<Status>
+			<Item>
+				<Name>Lock</Name>
+				<Register>
+					<Offset>D0</Offset>
+					<Length>1</Length>
+					<Bit>0</Bit>
+				</Register>
+			</Item>
+			<Item>
+				<Name>Overpower Warning</Name>
+				<Register>
+					<Offset>7B</Offset>
+					<Length>1</Length>
+					<Bit>0</Bit>
+				</Register>
+			</Item>
+			<Item>
+				<Name>Overcurrent Warning</Name>
+				<Register>
+					<Offset>7B</Offset>
+					<Length>1</Length>
+					<Bit>5</Bit>
+				</Register>
+			</Item>
+			<Item>
+				<Name>OCP</Name>
+				<Register>
+					<Offset>7B</Offset>
+					<Length>1</Length>
+					<Bit>7</Bit>
+				</Register>
+			</Item>
+			<Item>
+				<Name>OVP</Name>
+				<Register>
+					<Offset>79</Offset>
+					<Length>2</Length>
+					<Bit>5</Bit>
+				</Register>
+			</Item>
+		</Status>
+		<Configuration>
+			<Item>
+				<Name>Manual VID</Name>
+				<Register Type="Math">
+					<Offset>21</Offset>
+					<Math>
+						<Factor>-0.00625</Factor> 
+						<Offset>1.6125</Offset>
+						<Unit>V</Unit>
+						<Max>C8</Max>
+						<Format>F3</Format>
+					</Math>
+				</Register>
+			</Item>
+			<Item>
+				<Name>Override VID1</Name>
+				<Register Type="List">
+					<Offset>D2</Offset>
+					<Bit>3</Bit>
+					<Data Desc="Disable">0</Data>
+					<Data Desc="Enable">1</Data>
+				</Register>
+			</Item>
+			<Item>
+				<Name>Override VID2</Name>
+				<Register Type="List">
+					<Offset>D3</Offset>
+					<Bit>3</Bit>
+					<Data Desc="Disable">0</Data>
+					<Data Desc="Enable">1</Data>
+				</Register>
+			</Item>
+		</Configuration>
+		<Monitoring>
+			<Item>
+				<Name>VDDC Output Power</Name>
+				<Register Type="Math">
+					<Offset>96</Offset>
+					<Length>2</Length>
+					<Math SubType="LDF11">
+						<Unit>W</Unit>
+						<Format>F1</Format>
+						<Factor>100</Factor>
+					</Math>
+				</Register>
+			</Item>
+			<Item>
+				<Name>Output Current</Name>
+				<Register Type="Math">
+					<Offset>8C</Offset>
+					<Length>2</Length>
+					<Math SubType="LDF11">
+						<Unit>A</Unit>
+						<Format>F1</Format>
+						<Factor>100</Factor>
+					</Math>
+				</Register>
+			</Item>
+			<Item>
+				<Name>Output Voltage</Name>
+				<Register Type="Math">
+					<Offset>8B</Offset>
+					<Length>2</Length>
+					<Math>
+						<Factor>-0.00625</Factor> 
+						<Offset>1.6125</Offset>
+						<Unit>V</Unit>
+					</Math>
+				</Register>
+			</Item>
+		</Monitoring>
+	</Device>
+</EVC2>
