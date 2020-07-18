@@ -3,8 +3,8 @@
 <EVC2>
 	<!-- Application metadata -->
 	<Application>
-		<SoftwareVersion>10</SoftwareVersion>
-		<FileVersion>1</FileVersion>	
+		<SoftwareVersion>12</SoftwareVersion>
+		<FileVersion>2</FileVersion>	
 	</Application>
 	<Device>
 		<Name>NCP4206</Name>
@@ -16,12 +16,12 @@
 		</Address>
 		<Detect Type="RegisterMatch">
 			<Register>
-				<Offset>99</Offset>
+				<Command>99</Command>
 				<Length>1</Length>
 				<Data>41</Data> <!-- MFR_ID -->
 			</Register>
 			<Register>
-				<Offset>9A</Offset>
+				<Command>9A</Command>
 				<Length>2</Length>
 				<Data>3298</Data> <!-- MFR_MODEL -->
 			</Register>
@@ -30,7 +30,7 @@
 			<Item>
 				<Name>Lock</Name>
 				<Register>
-					<Offset>D0</Offset>
+					<Command>D0</Command>
 					<Length>1</Length>
 					<Bit>0</Bit>
 				</Register>
@@ -38,7 +38,7 @@
 			<Item>
 				<Name>Overpower Warning</Name>
 				<Register>
-					<Offset>7B</Offset>
+					<Command>7B</Command>
 					<Length>1</Length>
 					<Bit>0</Bit>
 				</Register>
@@ -46,7 +46,7 @@
 			<Item>
 				<Name>Overcurrent Warning</Name>
 				<Register>
-					<Offset>7B</Offset>
+					<Command>7B</Command>
 					<Length>1</Length>
 					<Bit>5</Bit>
 				</Register>
@@ -54,7 +54,7 @@
 			<Item>
 				<Name>OCP</Name>
 				<Register>
-					<Offset>7B</Offset>
+					<Command>7B</Command>
 					<Length>1</Length>
 					<Bit>7</Bit>
 				</Register>
@@ -62,7 +62,7 @@
 			<Item>
 				<Name>OVP</Name>
 				<Register>
-					<Offset>79</Offset>
+					<Command>79</Command>
 					<Length>2</Length>
 					<Bit>5</Bit>
 				</Register>
@@ -72,7 +72,7 @@
 			<Item>
 				<Name>Manual VID</Name>
 				<Register Type="Math">
-					<Offset>21</Offset>
+					<Command>21</Command>
 					<Math>
 						<Factor>-0.00625</Factor> 
 						<Offset>1.6125</Offset>
@@ -85,7 +85,7 @@
 			<Item>
 				<Name>Override VID1</Name>
 				<Register Type="List">
-					<Offset>D2</Offset>
+					<Command>D2</Command>
 					<Bit>3</Bit>
 					<Data Desc="Disable">0</Data>
 					<Data Desc="Enable">1</Data>
@@ -94,7 +94,7 @@
 			<Item>
 				<Name>Override VID2</Name>
 				<Register Type="List">
-					<Offset>D3</Offset>
+					<Command>D3</Command>
 					<Bit>3</Bit>
 					<Data Desc="Disable">0</Data>
 					<Data Desc="Enable">1</Data>
@@ -103,7 +103,7 @@
 			<Item>
 				<Name>Clear Fault-Codes</Name>
 				<Register Type="List">
-					<Offset>03</Offset>
+					<Command>03</Command>
 					<Bit>0</Bit>
 					<Data Desc="No">0</Data>
 					<Data Desc="Yes">1</Data>
@@ -114,7 +114,7 @@
 			<Item>
 				<Name>VDDC Output Power</Name>
 				<Register Type="Math">
-					<Offset>96</Offset>
+					<Command>96</Command>
 					<Length>2</Length>
 					<Math SubType="LDF11">
 						<Unit>W</Unit>
@@ -126,7 +126,7 @@
 			<Item>
 				<Name>Output Current</Name>
 				<Register Type="Math">
-					<Offset>8C</Offset>
+					<Command>8C</Command>
 					<Length>2</Length>
 					<Math SubType="LDF11">
 						<Unit>A</Unit>
@@ -138,7 +138,7 @@
 			<Item>
 				<Name>Output Voltage</Name>
 				<Register Type="Math">
-					<Offset>8B</Offset>
+					<Command>8B</Command>
 					<Length>2</Length>
 					<Math>
 						<Factor>-0.00625</Factor> 
